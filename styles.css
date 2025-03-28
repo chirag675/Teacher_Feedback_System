@@ -1,0 +1,61 @@
+/* General Page Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('Manipal-Jaipur-PhD-2021.webp') no-repeat center center;
+    background-size: cover; /* Covers  viewport */
+    background-attachment: fixed; /* image fixed */
+}
+
+/* Main Container */
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2); /* Transparent blur effect */
+    padding: 2rem;
+    border-radius: 20px;
+    backdrop-filter: blur(50px);
+}
+
+/* Logo Styling */
+.logo img {
+    width: 190px; /* Adjust size as needed */
+    height: auto; 
+    
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3)); /* Optional shadow */
+}
+
+
+
+/* Buttons Styling */
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid white;
+    border-radius: 50px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect: Expanding Circle */
+.btn:hover {
+    transform: scale(1.2);
+    border-radius: 50%;
+    background: white;
+    color: black;
+}

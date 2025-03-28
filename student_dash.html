@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="student_dash_style.css">
+    <title>Manipal University Jaipur</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="dashlogo.png" alt="Manipal University Jaipur Logo">
+        </div>
+        
+        <!-- Dashboard Div -->
+        <div class="dashboard">
+            <span>Dashboard</span>
+            <div class="dropdown-menu">
+                <button class="dropdown-btn">Submitted</button>
+                <button class="dropdown-btn">Profile</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Teacher List -->
+    <section class="teacher-list">
+        <h2>List of Teachers</h2>
+        <div class="teachers-container">
+            <div class="teacher-card" onclick="redirectToFeedbackForm('Dr. A. Sharma')">
+                <img src="teacher.jpg" alt="Teacher 1">
+                <h3>Dr. A. Sharma</h3>
+                <p>Computer Science</p>
+            </div>
+            <div class="teacher-card" onclick="redirectToFeedbackForm('Prof. B. Singh')">
+                <img src="teacher.jpg" alt="Teacher 2">
+                <h3>Prof. B. Singh</h3>
+                <p>Information Technology</p>
+            </div>
+            <div class="teacher-card" onclick="redirectToFeedbackForm('Dr. C. Verma')">
+                <img src="teacher.jpg" alt="Teacher 3">
+                <h3>Dr. C. Verma</h3>
+                <p>Electronics</p>
+            </div>
+            <div class="teacher-card" onclick="redirectToFeedbackForm('Prof. D. Mehta')">
+                <img src="teacher.jpg" alt="Teacher 4">
+                <h3>Prof. D. Mehta</h3>
+                <p>Mechanical</p>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        function redirectToFeedbackForm(teacherName) {
+            window.location.href = `feedback_form.html?teacher=${encodeURIComponent(teacherName)}`;
+        }
+    </script>
+    
+
+</body>
+</html>
+

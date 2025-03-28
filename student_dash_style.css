@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: white;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Logo */
+.logo {
+    background: orange;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.logo img {
+    height: 50px;
+    display: block;
+}
+
+/* Dashboard Button as a Div */
+.dashboard {
+    position: relative;
+    background: orange;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    width: 150px;
+}
+
+/* Show dropdown on hover */
+.dashboard:hover .dropdown-menu {
+    display: block;
+}
+
+/* Dropdown Buttons */
+.dropdown-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: orange;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    text-align: center;
+}
+
+.dropdown-btn:hover {
+    background: darkorange;
+}
+
+/* Teacher List Section */
+.teacher-list {
+    background: grey;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+/* Teachers Grid */
+.teachers-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Teacher Card */
+.teacher-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.teacher-card:hover {
+    transform: scale(1.05); /* Slight enlargement on hover */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Adds shadow for better effect */
+}
+
+.teacher-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.teacher-card h3 {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+.teacher-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
